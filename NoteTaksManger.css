@@ -1,0 +1,99 @@
+body{
+    color: #fff;
+    background: #666;
+}
+.center {
+    margin: 0 auto;
+}
+#search {
+    margin-top: 50px;
+}
+#searchInput {
+    width: 500px;
+}
+#contentArea {
+    width: 100%;
+    margin-top: 60px;
+}
+.itemLabel{
+    backface-visibility: hidden;
+    transform: rotate(-6deg) translateZ(0);
+    box-shadow: 10px 9px 14px -1px rgba(33,33,33,0.7);
+    border: 1px solid black;
+    height: 200px;
+    margin: 25px auto;
+}
+.addLocation .col-sm-3:nth-child(even) .itemLabel{
+    position: relative;
+    transform: rotate(4deg) translateZ(0);
+    top:-5px;
+    background-color: #cfc;
+}
+.addLocation .col-sm-3:nth-child(3n) .itemLabel{
+    position: relative;
+    transform: rotate(-3deg) translateZ(0);
+    top:-5px;
+    background: #ccf;
+}
+.addLocation .col-sm-3:nth-child(5n) .itemLabel{
+    position: relative;
+    transform: rotate(5deg) translateZ(0);
+    top:-5px;
+}
+.addLocation .col-sm-3 .itemLabel:hover, .addLocation .col-sm-3 .itemLabel:focus{
+    box-shadow: 10px 9px 14px -1px rgba(33,33,33,0.7);
+    transform: scale(1.25);
+    z-index: 5
+}
+
+.done{
+    text-decoration: line-through;
+}
+.delete{
+    float: right;
+}
+.span-convent{
+}
+.itemLabel{
+    background: #ffc;
+    color:#000;
+}
+.remind{
+    margin-bottom: 50px;
+}
+#foot > img{
+    width:6%
+}
+@media (max-width: 768px){
+    .col-sm-3 {
+        width: 200px;
+    }
+}
+.hide{
+    display: none;
+}
+span > h4{
+    margin:0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+#searchInput > input {
+    height: 36px
+}
+.green{
+    color:#1afa29;
+}
+.complete , .delete{
+    width: 10%;
+}
+.itemLabel img:hover{
+    color:#8a8a8a;
+}
+.doneImage{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 90px;
+}
